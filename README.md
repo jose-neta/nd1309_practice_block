@@ -2,8 +2,8 @@
 
 ## install
 
-    `yarn install`
+    `make`
 
 ## run
 
-    `node app.js`
+    `make run`
