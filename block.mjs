@@ -13,7 +13,7 @@ class Block {
     let self = this;
 
     return new Promise((resolve, reject) => {
-      self.hash = SHA256(self.nonce + self.body);
+      self.hash = SHA256(JSON.stringify(self));
       resolve(self);
     });
   }
