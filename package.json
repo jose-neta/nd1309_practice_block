@@ -1,14 +1,13 @@
 {
   "name": "block_data",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "what is a blockchain block",
   "main": "app.mjs",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "José Neta",
   "dependencies": {
     "crypto-js": "^3.1.9-1"
   }
