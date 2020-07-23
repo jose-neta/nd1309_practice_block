@@ -12,9 +12,10 @@ class Block {
   generateHash() {
     let self = this;
 
-    self.hash = SHA256(self.nonce + self.body);
-
-    return Promise.resolve(self);
+    return new Promise((resolve, reject) => {
+      self.hash = SHA256(self.nonce + self.body);
+      resolve(self);
+    });
   }
 }
 
