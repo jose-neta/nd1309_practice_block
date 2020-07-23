@@ -1,4 +1,5 @@
-import "crypto-js/sha256.js";
+import cryptojs from "crypto-js";
+const { SHA256 } = cryptojs;
 
 class Block {
   constructor(data) {
@@ -11,7 +12,7 @@ class Block {
   generateHash() {
     let self = this;
 
-    self.hash = "123";
+    self.hash = SHA256(self.nonce + self.body);
 
     return Promise.resolve(self);
   }
